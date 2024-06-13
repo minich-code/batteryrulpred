@@ -1,22 +1,21 @@
-pandas
-scikit-learn
-numpy
-matplotlib
-flask
-xgboost
-python-box # config box
-pyYAML # Read YAML file
-ensure
-joblib
-types-PyYAML
-Flask-Cors
-joblib
-seaborn
-pymongo
-streamlit
+pandas==1.4.4  
+scikit-learn==1.1.3  
+numpy==1.23.5  
+matplotlib==3.6.2  
+flask==2.2.3  
+xgboost==1.7.2  
+python-box==1.3.0  
+pyYAML==6.0  
+ensure==0.0.4  
+joblib==1.2.0  
+types-PyYAML==6.0.11  
+Flask-Cors==3.0.10  
+seaborn==0.12.2  
+pymongo==4.3.3  
+streamlit==1.17.0
 
 # mlflow 
-mlflow
-dagshub
+mlflow==2.1.1  
+dagshub==0.3.1  
 
 -e .
