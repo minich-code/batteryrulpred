@@ -4,8 +4,8 @@ from dataclasses import dataclass
 # mlflow 
 import dagshub
 import mlflow
-mlflow.set_tracking_uri("https://dagshub.com/minich-code/rulbattery.mlflow")
-dagshub.init(repo_owner='minich-code', repo_name='rulbattery', mlflow=True)
+mlflow.set_tracking_uri("https://dagshub.com/minich-code/batteryrulpred.mlflow")
+dagshub.init(repo_owner='minich-code', repo_name='batteryrulpred', mlflow=True)
 
 
 
@@ -58,7 +58,7 @@ class ConfigurationManager:
             target_column = schema.name,
 
             #mlflow 
-            mlflow_uri = "https://dagshub.com/minich-code/rulbattery.mlflow"
+            mlflow_uri = "https://dagshub.com/minich-code/batteryrulpred.mlflow"
 
         )
 
