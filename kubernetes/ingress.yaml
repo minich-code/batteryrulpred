@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: minich-app-service
+spec:
+  selector:
+    app: minich-app  # Selects pods with this label
+  ports:
+  - protocol: TCP
+    port: 80  # External port (adjust if needed)
+    targetPort: 8080  # Internal container port (matches containerPort)
+  type: LoadBalancer  # Expose using a load balancer (or NodePort, etc.)

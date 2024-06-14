@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minich-app-deployment
+spec:
+  replicas: 3  # Adjust as needed (number of pods)
+  selector:
+    matchLabels:
+      app: minich-app  # Match pods with this label
+  template:
+    metadata:
+      labels:
+        app: minich-app
+    spec:
+      containers:
+      - name: minich-app
+        image: minich/minich-repo:latest  # Matches your image name in deploy.yaml
+        ports:
+        - containerPort: 8080  # Port your app listens on
+        resources: 
+          requests:
+            cpu: "50m" 
+            memory: "128Mi"
+          limits:
+            cpu: "100m" 
+            memory: "256Mi" 
