@@ -1,4 +1,4 @@
-name: Build and Push Docker Image and Deploy to Kubernetes
+name: Build and Push Docker Image 
 
 on:
   push:
@@ -42,6 +42,7 @@ jobs:
         cache-from: type=local,src=/tmp/.buildx-cache
         cache-to: type=local,dest=/tmp/.buildx-cache
 
+# Saves the BuildKit cache using the actions/cache action. This ensures that the cache is updated with the latest build information.
     - name: Save BuildKit cache
       uses: actions/cache@v4
       with:
